@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "task",
+    "baseline",
+    "method",
+    "data",
+    "objective",
+    "evals",
+    "deployment_plan"
+  ],
+  "properties": {
+    "task": {
+      "type": "string"
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "evals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deployment_plan": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

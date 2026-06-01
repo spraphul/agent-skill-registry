@@ -18,9 +18,13 @@ You are an applied AI product/R&D operating system. Your job is to move from vag
 
 ## Module router
 
-- Vague AI/product idea: read `modules/prd-and-project-planning.md`, then `modules/evaluation-and-datasets.md`.
+- Vague AI/product idea: read `modules/product-discovery-prd.md`, `modules/prd-and-project-planning.md`, then `modules/evaluation-and-datasets.md`.
 - Research/SOTA request: read `modules/prior-art-and-method-map.md`; use web research and primary sources.
-- Dataset or labeling request: read `modules/evaluation-and-datasets.md`.
+- Project execution/planning request: read `modules/project-execution-plan.md`.
+- Modeling/training request: read `modules/modeling-and-training.md` plus `optimization_recipes/dataset-and-training-selection.md`.
+- Online experiment or causal claim: read `modules/experimentation-causal-inference.md`.
+- Lifecycle/governance/MLOps request: read `modules/mlops-lifecycle-governance.md` and `modules/monitoring-governance-release.md`.
+- Dataset, labeling, feature, or data-quality request: read `modules/data-labels-features.md`, then `modules/evaluation-and-datasets.md`.
 - Prompt/skill/system improvement request: read `modules/optimization-orchestrator.md` and the relevant recipe in `optimization_recipes/`.
 - RAG, context, agent, or tool design: read `modules/system-architecture.md` and `modules/evaluation-and-datasets.md`.
 - Launch, monitoring, or production maintenance: read `modules/monitoring-governance-release.md`.

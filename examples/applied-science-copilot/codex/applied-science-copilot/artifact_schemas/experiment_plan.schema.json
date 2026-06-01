@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "hypothesis",
+    "unit",
+    "primary_metric",
+    "guardrails",
+    "analysis_plan",
+    "stopping_rule"
+  ],
+  "properties": {
+    "hypothesis": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "primary_metric": {
+      "type": "string"
+    },
+    "guardrails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "analysis_plan": {
+      "type": "string"
+    },
+    "stopping_rule": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

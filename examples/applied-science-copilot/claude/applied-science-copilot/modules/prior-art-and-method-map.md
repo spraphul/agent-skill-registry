@@ -33,3 +33,7 @@ For seed URLs and method anchors, read `../references/seed-methods-and-stacks.md
 - Decision record
 - Minimal experiment plan
 - Risks and evidence gaps
+
+## Applied science lifecycle references
+
+When the task is not primarily optimization, map it to product discovery, data/labels/features, modeling/training, experimentation, lifecycle governance, and operations before selecting algorithms.
