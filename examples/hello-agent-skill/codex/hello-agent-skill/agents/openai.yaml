@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hello Agent Skill"
+  short_description: "Minimal Codex-compatible registry smoke-test skill."
+  default_prompt: "Use the hello-agent-skill to verify registry discovery."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,1 @@
+This placeholder demonstrates where templates, images, or other non-context assets can live.

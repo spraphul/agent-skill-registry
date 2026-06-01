@@ -1,0 +1,1 @@
+Hello — this is a {{agent}} registry smoke test.

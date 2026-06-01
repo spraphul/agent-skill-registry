@@ -8,12 +8,18 @@
       "description": "Minimal example showing a cross-agent skill registry entry.",
       "source": "./examples/hello-agent-skill",
       "license": "MIT",
-      "compatibility": ["codex", "claude"],
+      "compatibility": [
+        "codex",
+        "claude"
+      ],
       "entrypoints": {
-        "codex": "SKILL.md",
-        "claude": "skill.md"
+        "codex": "codex/hello-agent-skill",
+        "claude": "claude/hello-agent-skill"
       },
-      "tags": ["example", "starter"]
+      "tags": [
+        "example",
+        "starter"
+      ]
     }
   ]
 }

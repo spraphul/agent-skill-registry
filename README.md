@@ -13,6 +13,28 @@ A registry entry can point to:
 - A repository that supports both
 - A generic agent capability package with documented adapters
 
+## Example scaffold layout
+
+The example skill keeps platform packages separate so consumers can copy or install the expected directory for their agent:
+
+```text
+examples/hello-agent-skill/
+├── codex/
+│   └── hello-agent-skill/
+│       ├── SKILL.md
+│       ├── agents/openai.yaml
+│       ├── assets/
+│       ├── references/
+│       └── scripts/
+└── claude/
+    └── hello-agent-skill/
+        ├── SKILL.md
+        ├── examples.md
+        ├── reference.md
+        ├── scripts/
+        └── templates/
+```
+
 ## Registry format
 
 Registry entries live in [`registry.json`](./registry.json). Each entry declares:
@@ -35,12 +57,12 @@ Schema: [`schemas/skill-entry.schema.json`](./schemas/skill-entry.schema.json)
   "id": "hello-agent-skill",
   "name": "Hello Agent Skill",
   "description": "Minimal example showing a cross-agent skill registry entry.",
-  "source": "https://github.com/example/hello-agent-skill",
+  "source": "./examples/hello-agent-skill",
   "license": "MIT",
   "compatibility": ["codex", "claude"],
   "entrypoints": {
-    "codex": "SKILL.md",
-    "claude": "skill.md"
+    "codex": "codex/hello-agent-skill",
+    "claude": "claude/hello-agent-skill"
   },
   "tags": ["example", "starter"]
 }
