@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "release_candidate",
+    "must_pass",
+    "thresholds",
+    "rollback",
+    "decision"
+  ],
+  "properties": {
+    "release_candidate": {
+      "type": "string"
+    },
+    "must_pass": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "thresholds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

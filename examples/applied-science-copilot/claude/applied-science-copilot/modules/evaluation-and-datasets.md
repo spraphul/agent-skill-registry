@@ -55,3 +55,13 @@ Track at minimum:
 - Judge/rubric design
 - CI gate plan
 - Release threshold and blocker list
+
+## v0.2 executable utilities
+
+When useful, use scripts in `scripts/`:
+
+- `generate_eval_harness.py` to create starter JSONL eval cases.
+- `cluster_failures.py` to summarize failure tags from eval results.
+- `pareto_select.py` to select non-dominated candidates from metrics JSONL.
+
+These utilities are intentionally small and stack-neutral. Replace them with stack-specific runners when a project chooses DSPy, LangGraph, RAGAS, Braintrust, Phoenix, LangSmith, or another concrete stack.

@@ -46,3 +46,7 @@ Classify the failure before choosing a lever:
 - Cost/latency comparison
 - Safety/governance blocker checks
 - Versioned decision record
+
+## v0.2 utility support
+
+Use `scripts/pareto_select.py` when candidate metrics are already available as JSONL. Use `scripts/cluster_failures.py` to turn eval failures into optimization targets before selecting prompt, skill, RAG, training, or runtime levers.

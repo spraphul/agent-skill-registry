@@ -88,7 +88,7 @@ See [`docs/INSTALL.md`](./docs/INSTALL.md) for user, project, dry-run, force, an
 
 ## Applied Science Copilot
 
-The registry includes an initial `applied-science-copilot` skill scaffold. It is intentionally iterative: v0.1 contains the router, method map, PRD/project planning, dataset/eval harness, optimization orchestration, monitoring/governance/release modules, and starter artifact schemas. Future versions should add concrete stack adapters, executable eval generators, trace ingestion, and optimizer backends.
+The registry includes an initial `applied-science-copilot` skill scaffold. It is intentionally iterative: v0.1 contains the router, method map, PRD/project planning, dataset/eval harness, optimization orchestration, monitoring/governance/release modules, and starter artifact schemas. v0.2 adds stack adapters and small executable utilities for eval harness generation, failure clustering, and Pareto candidate selection. Future versions should add concrete stack adapters, executable eval generators, trace ingestion, and optimizer backends.
 
 ```bash
 agent-skill install applied-science-copilot --agent codex
