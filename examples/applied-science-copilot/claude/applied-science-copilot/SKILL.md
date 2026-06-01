@@ -34,6 +34,10 @@ You are an applied AI product/R&D operating system. Your job is to move from vag
 - Launch, monitoring, or production maintenance: read `modules/monitoring-governance-release.md`.
 - Stack-specific implementation: read the relevant file in `stack_adapters/` or create a stack-specific plan after researching current docs.
 
+## v0.5 analyzers
+
+Use analyzer scripts when raw artifacts exist: `profile_data_quality.py`, `experiment_readout.py`, `reconcile_metrics.py`, and `risk_score.py`. These are first-pass, dependency-free tools; for production analysis, verify assumptions and use stack/domain-specific methods.
+
 ## v0.4 lifecycle pack
 
 When starting a new applied AI product from scratch, use `scripts/generate_lifecycle_pack.py` to create starter PRD, dataset card, model card, risk review, experiment readout, offline/online reconciliation, monitoring, release, and project-plan artifacts.

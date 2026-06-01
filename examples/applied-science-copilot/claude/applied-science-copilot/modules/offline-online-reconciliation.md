@@ -24,3 +24,7 @@ Use this module when offline evals, human review, and online product metrics dis
 ## Output
 
 Produce a reconciliation report: disagreement type, hypotheses, evidence, next eval changes, and rollout decision.
+
+## Utility
+
+Use `scripts/reconcile_metrics.py` for a quick directional offline/online disagreement diagnosis. Treat it as triage, not proof.

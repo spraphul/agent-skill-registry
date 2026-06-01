@@ -106,7 +106,7 @@ def copy_skill(src: Path, dst: Path, force: bool, dry_run: bool) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if dst.exists():
         shutil.rmtree(dst)
-    shutil.copytree(src, dst)
+    shutil.copytree(src, dst, ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".DS_Store"))
 
 
 def install_skill(

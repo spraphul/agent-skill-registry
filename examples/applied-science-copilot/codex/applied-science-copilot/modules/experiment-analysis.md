@@ -22,3 +22,7 @@ Use this module after offline or online experiments.
 ## Output
 
 Produce an experiment readout with decision, caveats, and follow-up experiments.
+
+## Utility
+
+Use `scripts/experiment_readout.py` for a simple two-proportion readout when the online metric is binary. For continuous, clustered, sequential, or CUPED-adjusted experiments, create a stack-specific analysis plan before claiming significance.

@@ -30,3 +30,7 @@ Use this module when documenting or auditing datasets. Anchor the work in Datash
 ## Output
 
 Produce a dataset card, quality checklist, and remediation plan before training or eval use.
+
+## Utility
+
+Use `scripts/profile_data_quality.py` for a dependency-free CSV profile covering missingness, cardinality, duplicates, inferred primitive types, and top values.

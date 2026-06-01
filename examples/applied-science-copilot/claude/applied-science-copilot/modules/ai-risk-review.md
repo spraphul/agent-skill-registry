@@ -29,3 +29,10 @@ Use this module before launch, autonomy expansion, model/tool changes, or extern
 ## Output
 
 Produce risk tier, blockers, mitigations, approval checklist, and evidence gaps.
+
+## Utility
+
+Use `scripts/risk_score.py` for deterministic first-pass risk tiering. It does not replace policy review; it makes assumptions visible and auditable.
+
+
+Risk scoring dimensions use high-is-high-risk semantics; `irreversibility` means hard-to-reverse decisions or actions.
