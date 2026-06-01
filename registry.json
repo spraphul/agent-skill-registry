@@ -1,0 +1,19 @@
+{
+  "$schema": "./schemas/skill-entry.schema.json",
+  "version": "0.1.0",
+  "skills": [
+    {
+      "id": "hello-agent-skill",
+      "name": "Hello Agent Skill",
+      "description": "Minimal example showing a cross-agent skill registry entry.",
+      "source": "./examples/hello-agent-skill",
+      "license": "MIT",
+      "compatibility": ["codex", "claude"],
+      "entrypoints": {
+        "codex": "SKILL.md",
+        "claude": "skill.md"
+      },
+      "tags": ["example", "starter"]
+    }
+  ]
+}

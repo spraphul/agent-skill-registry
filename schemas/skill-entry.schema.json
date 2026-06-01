@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent-skill-registry.dev/schemas/skill-entry.schema.json",
+  "title": "Agent Skill Registry",
+  "type": "object",
+  "required": ["version", "skills"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "skills": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/skill" },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "skill": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "source",
+        "license",
+        "compatibility",
+        "entrypoints",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{1,62}[a-z0-9]$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "description": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 240
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compatibility": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["codex", "claude"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "entrypoints": {
+          "type": "object",
+          "properties": {
+            "codex": { "type": "string" },
+            "claude": { "type": "string" }
+          },
+          "additionalProperties": { "type": "string" },
+          "minProperties": 1
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,31}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "homepage": { "type": "string" },
+        "maintainers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
