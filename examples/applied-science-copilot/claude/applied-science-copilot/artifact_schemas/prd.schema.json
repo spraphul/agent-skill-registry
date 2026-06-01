@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "problem",
+    "users",
+    "jobs_to_improve",
+    "non_goals",
+    "success_metrics",
+    "risks"
+  ],
+  "properties": {
+    "problem": {
+      "type": "string"
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "jobs_to_improve": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "non_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "success_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

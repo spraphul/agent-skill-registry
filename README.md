@@ -86,6 +86,15 @@ agent-skill install hello-agent-skill --agent both
 
 See [`docs/INSTALL.md`](./docs/INSTALL.md) for user, project, dry-run, force, and bulk-install options.
 
+## Applied Science Copilot
+
+The registry includes an initial `applied-science-copilot` skill scaffold. It is intentionally iterative: v0.1 contains the router, method map, PRD/project planning, dataset/eval harness, optimization orchestration, monitoring/governance/release modules, and starter artifact schemas. Future versions should add concrete stack adapters, executable eval generators, trace ingestion, and optimizer backends.
+
+```bash
+agent-skill install applied-science-copilot --agent codex
+agent-skill install applied-science-copilot --agent claude
+```
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md).

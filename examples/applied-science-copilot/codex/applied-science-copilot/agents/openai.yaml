@@ -1,0 +1,7 @@
+interface:
+  display_name: "Applied Science Copilot"
+  short_description: "End-to-end applied AI product, research, eval, optimization, and operations copilot."
+  default_prompt: "Use applied-science-copilot to turn this AI product/research task into artifacts, implementation steps, evals, and an iteration plan."
+
+policy:
+  allow_implicit_invocation: true

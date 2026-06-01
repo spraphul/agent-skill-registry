@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "goal",
+    "baseline",
+    "objectives",
+    "candidate_levers",
+    "eval_suites",
+    "release_gate"
+  ],
+  "properties": {
+    "goal": {
+      "type": "string"
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_levers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eval_suites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "release_gate": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

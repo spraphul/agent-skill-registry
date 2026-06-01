@@ -20,6 +20,30 @@
         "example",
         "starter"
       ]
+    },
+    {
+      "id": "applied-science-copilot",
+      "name": "Applied Science Copilot",
+      "description": "End-to-end applied AI product and research copilot for PRDs, datasets, evals, optimization, agents, monitoring, governance, and release.",
+      "source": "./examples/applied-science-copilot",
+      "license": "MIT",
+      "compatibility": [
+        "codex",
+        "claude"
+      ],
+      "entrypoints": {
+        "codex": "codex/applied-science-copilot",
+        "claude": "claude/applied-science-copilot"
+      },
+      "tags": [
+        "applied-ai",
+        "agents",
+        "evals",
+        "optimization",
+        "rag",
+        "llmops",
+        "product"
+      ]
     }
   ]
 }

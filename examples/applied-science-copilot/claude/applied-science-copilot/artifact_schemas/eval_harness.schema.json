@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "task",
+    "datasets",
+    "metrics",
+    "must_pass",
+    "release_thresholds"
+  ],
+  "properties": {
+    "task": {
+      "type": "string"
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "must_pass": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "release_thresholds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}
