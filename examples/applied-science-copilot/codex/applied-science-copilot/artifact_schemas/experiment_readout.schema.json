@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "hypothesis",
+    "result",
+    "primary_metric",
+    "guardrails",
+    "decision",
+    "caveats"
+  ],
+  "properties": {
+    "hypothesis": {
+      "type": "string"
+    },
+    "result": {
+      "type": "string"
+    },
+    "primary_metric": {
+      "type": "string"
+    },
+    "guardrails": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    },
+    "caveats": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

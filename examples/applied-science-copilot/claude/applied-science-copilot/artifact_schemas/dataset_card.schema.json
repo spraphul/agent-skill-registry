@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "name",
+    "motivation",
+    "composition",
+    "collection",
+    "labeling",
+    "intended_use",
+    "risks",
+    "maintenance"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "motivation": {
+      "type": "string"
+    },
+    "composition": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "string"
+    },
+    "labeling": {
+      "type": "string"
+    },
+    "intended_use": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "string"
+    },
+    "maintenance": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
