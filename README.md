@@ -68,6 +68,18 @@ Schema: [`schemas/skill-entry.schema.json`](./schemas/skill-entry.schema.json)
 }
 ```
 
+## Install skills
+
+Use the installer to copy one or more registry skills into Codex or Claude skill directories:
+
+```bash
+python3 scripts/install_skill.py hello-agent-skill --agent codex
+python3 scripts/install_skill.py hello-agent-skill --agent claude
+python3 scripts/install_skill.py hello-agent-skill --agent both
+```
+
+See [`docs/INSTALL.md`](./docs/INSTALL.md) for user, project, dry-run, force, and bulk-install options.
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
