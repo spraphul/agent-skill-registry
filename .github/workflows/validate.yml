@@ -13,7 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - run: python3 -m pip install -e .
       - run: python3 -m json.tool registry.json >/dev/null
       - run: python3 -m json.tool schemas/skill-entry.schema.json >/dev/null
-      - run: python3 scripts/validate_registry.py
-      - run: python3 scripts/install_skill.py hello-agent-skill --agent both --dest /tmp/agent-skill-registry-test --dry-run
+      - run: agent-skill validate
+      - run: agent-skill install hello-agent-skill --agent both --dest /tmp/agent-skill-registry-test --dry-run

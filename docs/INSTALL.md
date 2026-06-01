@@ -13,6 +13,28 @@ Each registry entry can expose one or more agent entrypoints:
 
 The installer copies the selected entrypoint directory into the target agent's skills directory.
 
+Run commands from the repository root, or pass an explicit registry file:
+
+```bash
+agent-skill install --registry /path/to/registry.json hello-agent-skill --agent codex
+```
+
+## Install the CLI
+
+From the repository root:
+
+```bash
+pipx install .
+```
+
+For development inside a clone, use editable install:
+
+```bash
+python3 -m pip install -e .
+```
+
+After installation, use the `agent-skill` command. If `pip` warns that the script directory is not on `PATH`, either add that directory to `PATH` or use `pipx install .`.
+
 ## Defaults
 
 | Agent | User install root | Project install root |
@@ -23,41 +45,41 @@ The installer copies the selected entrypoint directory into the target agent's s
 ## Install one skill
 
 ```bash
-python3 scripts/install_skill.py hello-agent-skill --agent codex
-python3 scripts/install_skill.py hello-agent-skill --agent claude
+agent-skill install hello-agent-skill --agent codex
+agent-skill install hello-agent-skill --agent claude
 ```
 
 ## Install for both agents
 
 ```bash
-python3 scripts/install_skill.py hello-agent-skill --agent both
+agent-skill install hello-agent-skill --agent both
 ```
 
 ## Install multiple skills
 
 ```bash
-python3 scripts/install_skill.py hello-agent-skill another-skill --agent codex
+agent-skill install hello-agent-skill another-skill --agent codex
 ```
 
 ## Install every compatible skill
 
 ```bash
-python3 scripts/install_skill.py --all --agent codex
-python3 scripts/install_skill.py --all --agent both
+agent-skill install --all --agent codex
+agent-skill install --all --agent both
 ```
 
 ## Install into a project
 
 ```bash
-python3 scripts/install_skill.py hello-agent-skill --agent codex --scope project --project-dir /path/to/repo
-python3 scripts/install_skill.py hello-agent-skill --agent claude --scope project --project-dir /path/to/repo
+agent-skill install hello-agent-skill --agent codex --scope project --project-dir /path/to/repo
+agent-skill install hello-agent-skill --agent claude --scope project --project-dir /path/to/repo
 ```
 
 ## Preview or overwrite
 
 ```bash
-python3 scripts/install_skill.py hello-agent-skill --agent both --dry-run
-python3 scripts/install_skill.py hello-agent-skill --agent both --force
+agent-skill install hello-agent-skill --agent both --dry-run
+agent-skill install hello-agent-skill --agent both --force
 ```
 
 ## Custom destination
@@ -65,7 +87,7 @@ python3 scripts/install_skill.py hello-agent-skill --agent both --force
 Use `--dest` to copy into a custom skills root. This is useful for tests and non-standard agent setups.
 
 ```bash
-python3 scripts/install_skill.py hello-agent-skill --agent codex --dest /tmp/codex-skills
+agent-skill install hello-agent-skill --agent codex --dest /tmp/codex-skills
 ```
 
 When `--dest` is used with multiple agents, installs are namespaced by agent to avoid collisions:
@@ -79,7 +101,7 @@ When `--dest` is used with multiple agents, installs are namespaced by agent to 
 ## Validate the registry
 
 ```bash
-python3 scripts/validate_registry.py
+agent-skill validate
 ```
 
 Validation checks that every local registry entrypoint exists and contains `SKILL.md`.
