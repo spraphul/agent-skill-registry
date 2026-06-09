@@ -44,6 +44,31 @@
         "llmops",
         "product"
       ]
+    },
+    {
+      "id": "tweetclaw",
+      "name": "TweetClaw",
+      "description": "OpenClaw skill for reviewed X/Twitter search, posting, media, monitor, webhook, and giveaway workflows.",
+      "source": "https://github.com/Xquik-dev/tweetclaw",
+      "license": "MIT-0",
+      "compatibility": [
+        "codex"
+      ],
+      "entrypoints": {
+        "codex": "skills/tweetclaw"
+      },
+      "tags": [
+        "openclaw",
+        "twitter",
+        "x",
+        "social-media",
+        "automation",
+        "webhooks"
+      ],
+      "homepage": "https://github.com/Xquik-dev/tweetclaw/tree/master/skills/tweetclaw",
+      "maintainers": [
+        "Xquik-dev"
+      ]
     }
   ]
 }
