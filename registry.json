@@ -44,6 +44,31 @@
         "llmops",
         "product"
       ]
+    },
+    {
+      "id": "x-twitter-scraper",
+      "name": "Xquik X Twitter Scraper",
+      "description": "Codex skill for Xquik REST API, MCP setup, tweet search, user lookup, follower extraction, media download, monitoring, webhooks, and gated posting workflows.",
+      "source": "https://github.com/Xquik-dev/x-twitter-scraper",
+      "license": "MIT",
+      "compatibility": [
+        "codex"
+      ],
+      "entrypoints": {
+        "codex": "skills/x-twitter-scraper"
+      },
+      "tags": [
+        "x",
+        "twitter",
+        "mcp",
+        "api",
+        "webhooks",
+        "automation"
+      ],
+      "homepage": "https://docs.xquik.com",
+      "maintainers": [
+        "Xquik-dev"
+      ]
     }
   ]
 }
